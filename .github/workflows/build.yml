@@ -1,0 +1,12 @@
+name: Example
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call action
+        uses: steve-todorov/actions-test/reference@main
